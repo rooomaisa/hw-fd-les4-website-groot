@@ -1,0 +1,60 @@
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Het gaat om de volgende HEX-codes, root is een pseudo-class*/
+:root {
+    --color-purple: #5722CD;
+    --color-blue: #4845E4;
+    --color-pink: #ED4385;
+    --color-black: #0C0C0C;
+    --color-light-purple: #F2F0FF;
+    --color-light-grey: #F2F0FF;
+    --color-grey: #7A7A7A;
+}
+/*deze gaat dus alleen over de body html */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-grey);
+}
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+/*voor de headings staat er dan weet nog niet wat dan ?*/
+header {
+    font-family: 'Merriweather', sans-serif;
+}
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+/* --------------- 4.2 Introduction ------------------- */
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
