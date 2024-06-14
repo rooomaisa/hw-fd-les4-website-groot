@@ -9,7 +9,10 @@
     4. Areas
         4.1 Header
         4.2 Introduction
-        etc.
+        4.3 Projects
+        4.4 Services
+        4.5 Contact form
+        4.6 Footer
     5. Media Queries
 ////////////////////////*/
 
@@ -33,14 +36,17 @@
     --color-light-grey: #F2F0FF;
     --color-grey: #7A7A7A;
 }
+
+
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
 /*deze gaat dus alleen over de body html */
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--color-grey);
 }
 
-
-/* ------------------------------- 2. Typography ----------------------------------- */
 /*voor de headings staat er dan weet nog niet wat dan ?*/
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', sans-serif;
@@ -106,63 +112,26 @@ img {
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
-.header-section{
-    background-color: var(--color-purple);
-    color: var(--color-light-grey);
-}
 
-.header-nav{
-    border: 1px solid green;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
 
-.header-nav ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-basis: 300px;
-    align-items: center;
-}
 
-.header-nav ul li{
-    color: var(--color-light-grey);
-    margin: 5px 5px;
-}
-
-.header-content-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid yellow;
-    padding: 40px 120px;
-}
-.header-text{
-    border: 1px solid purple;
-    width: 1000px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 /* --------------- 4.2 Introduction ------------------- */
 
-.introduction-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid yellow;
-    width: 1000px;
-    padding: 40px;
-    text-align: center;
-}
-.introduction-section h2{
-    color: var(--color-purple);
-}
-.introduction-section p{
-    margin: 100px 0;
-}
+
+
+/* --------------- 4.3 Projects ------------------------- */
+
+
+/* --------------- 4.4 Services ------------------------- */
+
+
+/* --------------- 4.5 Contact form  ------------------------- */
+
+
+
+/* --------------- 4.6 Footer ------------------------- */
+
+
+
+
 /* ------------------------------- 5. Media Queries -------------------------------- */
