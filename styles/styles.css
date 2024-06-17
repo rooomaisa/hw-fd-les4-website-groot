@@ -55,7 +55,11 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 3rem;
     line-height: 1.2;
+}
 
+h2 {
+    font-size: 2rem;
+    line-height: 1.2;
 }
 
 p {
@@ -95,7 +99,7 @@ button {
     background: var(--color-pink);
     border-radius: 30px;
     border: none;
-    color: #fff;
+    color: var(--color-light-grey);
     padding: 12px 24px;
     margin: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -112,7 +116,12 @@ img {
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+/* toen ik hier met kleuren ging gaan mij LI mee omdat die ook paars zijn die straks nog naar paars */
+.header-section{
+    background: var(--color-grey);
+    color: var(--color-light-grey);
 
+}
 
 
 /* --------------- 4.2 Introduction ------------------- */
@@ -121,6 +130,19 @@ img {
 
 /* --------------- 4.3 Projects ------------------------- */
 
+.projects-section-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects-content-text{
+    flex-basis: 600px;
+}
+
+.projects-content-image{
+    flex-basis: 800px;
+}
 
 /* --------------- 4.4 Services ------------------------- */
 
