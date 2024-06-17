@@ -152,8 +152,13 @@ img {
 
 /* --------------- 4.2 Introduction ------------------- */
 
-.inner-container-introduction{
-
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 120px;
+    /*row-gap: 50px;*/
 }
 
 
@@ -178,6 +183,9 @@ img {
     max-width: 50px;
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
 /* --------------- 4.4 Services-grid ------------------------- */
 .grid-section{
 
@@ -217,7 +225,10 @@ img {
 
 /* --------------- 4.6 Footer ------------------------- */
 
-
+.footer-content{
+    background-color: var(--color-black);
+    align-items: center;
+}
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
