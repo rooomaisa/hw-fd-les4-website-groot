@@ -83,7 +83,7 @@ p {
     flex-direction: column;
     align-items: center;
     margin: 0 20px;
-    border: 1px solid blue;
+    border: 1px solid yellow;
 }
 
 
@@ -118,14 +118,41 @@ img {
 /* --------------- 4.1 Header ------------------------- */
 /* toen ik hier met kleuren ging gaan mij LI mee omdat die ook paars zijn die straks nog naar paars */
 .header-section{
-    background: var(--color-grey);
+    background: var(--color-purple);
     color: var(--color-light-grey);
-
 }
 
+.header-navigation{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+.header-navigation ul {
+    list-style: none;
+    display: flex;
+    flex-basis: 400px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-navigation ul li a {
+    color: var(--color-light-grey);
+}
+
+/*.header-content{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    align-content: center;*/
+/*}*/
 
 /* --------------- 4.2 Introduction ------------------- */
 
+.inner-container-introduction{
+
+}
 
 
 /* --------------- 4.3 Projects ------------------------- */
@@ -140,12 +167,47 @@ img {
     flex-basis: 600px;
 }
 
+
 .projects-content-image{
     flex-basis: 800px;
 }
 
-/* --------------- 4.4 Services ------------------------- */
+.projects-content-text img {
+    max-width: 50px;
+}
 
+/* --------------- 4.4 Services-grid ------------------------- */
+.grid-section{
+
+}
+
+.inner-container-grid {
+    flex-basis: 1400px;
+    flex-direction: row;
+    display: flex;
+    margin: 0 20px;
+    padding: 100px 0;
+    row-gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.grid-article{
+    flex-direction: row;
+    flex-basis: 400px;
+    border: 1px solid var(--color-purple);
+    padding: 20px 40px;
+
+}
+
+.grid-article h3{
+    color: var(--color-purple);
+}
+
+.grid-section img {
+    max-width: 50px;
+    margin: 16px 0;
+}
 
 /* --------------- 4.5 Contact form  ------------------------- */
 
