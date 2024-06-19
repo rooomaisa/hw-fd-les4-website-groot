@@ -153,12 +153,23 @@ img {
 /* --------------- 4.2 Introduction ------------------- */
 
 .introduction{
+    /*flex-basis: 600px;*/
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 60px 120px;
     /*row-gap: 50px;*/
+}
+
+.introduction p {
+    padding: 60px 0 40px 0;
+}
+
+.introduction h2{
+    color: var(--color-purple);
+    padding: 10px 0;
 }
 
 
@@ -168,10 +179,11 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 40px 0;
 }
 
 .projects-content-text{
-    flex-basis: 600px;
+    flex-basis: 400px;
 }
 
 
@@ -221,14 +233,57 @@ img {
 
 /* --------------- 4.5 Contact form  ------------------------- */
 
+.form-section{
+    background: var(--color-purple);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-light-grey);
+}
+
+.form form {
+    flex-basis: 600px;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+form h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+form h5 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+form label {
+    padding: 10px 0;
+}
+
+form input{
+    padding: 10px 0;
+}
+form button {
+    width: 20%;
+}
 
 
 /* --------------- 4.6 Footer ------------------------- */
 
-.footer-content{
+.footer-content {
     background-color: var(--color-black);
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
+
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
