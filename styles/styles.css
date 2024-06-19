@@ -1,0 +1,289 @@
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        4.3 Projects
+        4.4 Services
+        4.5 Contact form
+        4.6 Footer
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Het gaat om de volgende HEX-codes, root is een pseudo-class*/
+:root {
+    --color-purple: #5722CD;
+    --color-blue: #4845E4;
+    --color-pink: #ED4385;
+    --color-black: #0C0C0C;
+    --color-light-purple: #F2F0FF;
+    --color-light-grey: #F2F0FF;
+    --color-grey: #7A7A7A;
+}
+
+
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+/*deze gaat dus alleen over de body html */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-grey);
+}
+
+/*voor de headings staat er dan weet nog niet wat dan ?*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+.outer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.inner-container{
+    flex-basis: 1400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    border: 1px solid yellow;
+}
+
+
+/* --------------- 3.2 Other --------------------------- */
+a,
+a:visited,
+a:link{
+    text-decoration: none;
+    color: var(--color-purple);
+}
+
+button {
+    background: var(--color-pink);
+    border-radius: 30px;
+    border: none;
+    color: var(--color-light-grey);
+    padding: 12px 24px;
+    margin: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-family: 'Merriweather', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+/* toen ik hier met kleuren ging gaan mij LI mee omdat die ook paars zijn die straks nog naar paars */
+.header-section{
+    background: var(--color-purple);
+    color: var(--color-light-grey);
+}
+
+.header-navigation{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+.header-navigation ul {
+    list-style: none;
+    display: flex;
+    flex-basis: 400px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-navigation ul li a {
+    color: var(--color-light-grey);
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 120px;
+    row-gap: 20px;
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+
+.introduction{
+    /*flex-basis: 600px;*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 120px;
+    /*row-gap: 50px;*/
+}
+
+.introduction p {
+    padding: 60px 0 40px 0;
+}
+
+.introduction h2{
+    color: var(--color-purple);
+    padding: 10px 0;
+}
+
+
+/* --------------- 4.3 Projects ------------------------- */
+
+.projects-section-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.projects-content-text{
+    flex-basis: 400px;
+}
+
+
+.projects-content-image{
+    flex-basis: 800px;
+}
+
+.projects-content-text img {
+    max-width: 50px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+/* --------------- 4.4 Services-grid ------------------------- */
+.grid-section{
+
+}
+
+.inner-container-grid {
+    flex-basis: 1400px;
+    flex-direction: row;
+    display: flex;
+    margin: 0 20px;
+    padding: 100px 0;
+    row-gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.grid-article{
+    flex-direction: row;
+    flex-basis: 400px;
+    border: 1px solid var(--color-purple);
+    padding: 20px 40px;
+
+}
+
+.grid-article h3{
+    color: var(--color-purple);
+}
+
+.grid-section img {
+    max-width: 50px;
+    margin: 16px 0;
+}
+
+/* --------------- 4.5 Contact form  ------------------------- */
+
+.form-section{
+    background: var(--color-purple);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-light-grey);
+}
+
+.form form {
+    flex-basis: 600px;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+form h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+form h5 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+form label {
+    padding: 10px 0;
+}
+
+form input{
+    padding: 10px 0;
+}
+form button {
+    width: 20%;
+}
+
+
+/* --------------- 4.6 Footer ------------------------- */
+
+.footer-content {
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
